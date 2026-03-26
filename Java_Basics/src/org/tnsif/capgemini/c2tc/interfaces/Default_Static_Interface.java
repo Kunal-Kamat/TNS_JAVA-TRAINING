@@ -24,40 +24,44 @@ class Car6 implements Vehicle6 {
 
 	@Override
 	public void start() {
+		
 		System.out.println("Car " + model +" is staring ");
 	}
 
 	@Override
 	public void stop() {
+		
 		System.out.println("Car " + model +" is stoping ");
 	}
 	
 }
 
-class Bike6 implements Vehicle6
-{
+class Bike6 implements Vehicle6{
     private String type;
+   
 	public Bike6(String type) {
 		this.type = type;
 	}
 
 	@Override
 	public void start() {
+		
 		System.out.println("Car " +type+" is staring ");
 	}
 
 	@Override
 	public void stop() {
+		
 		System.out.println("Car " + type+" is stoping ");
 	}
 	
 }
 
-public class Default_Static_Interface {
+public class Default_Static_Interface{
+
 	public static void main(String[] args) {
-		Vehicle6 car= new Car6("KIA");
-		
-		Vehicle6 bike= new Bike6("Royal Enfield"); 
+		Vehicle6 car=new Car6("KIA");
+		Vehicle6 bike=new Bike6("Royal Enfield"); 
 		
 		car.start();
 		car.stop();
@@ -69,8 +73,11 @@ public class Default_Static_Interface {
 		bike.repair();
 		
 		Vehicle6.checkMaintaince();
+		
 		System.out.println("Maximun speed of vehicle is " +  Vehicle6.Max_speed );
-
+		
 	}
 
 }
+
+
